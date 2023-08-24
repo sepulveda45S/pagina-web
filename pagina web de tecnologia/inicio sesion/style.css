@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.footer {
+    margin-bottom: 0;
+    background: #6f00ff;
+
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, "Ubuntu", helvetica;
+    background: url(https://preview.redd.it/glisaljkehx61.jpg?width=3840&format=pjpg&auto=webp&s=67ef0cab6703666629096074c75e22630c2292ee) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: linear-gradient(to right, rgb(21, 3, 113), rgb(76, 0, 255), rgb(96, 18, 141));
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active, a:hover {
+    color: #ffffff;
+    font-weight: 100;
+    background: linear-gradient(90deg, rgba(2, 0, 2, 0.21) 40%, rgba(0, 242, 255, 0.238) 100%);
+    transition: .5s;
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.354);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+section {
+    background: url(https://preview.redd.it/glisaljkehx61.jpg?width=3840&format=pjpg&auto=webp&s=67ef0cab6703666629096074c75e22630c2292ee) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.contenedor-formularios {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.contenedor-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+.contenedor-tabs:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contenedor-tabs li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.contenedor-tabs li a:hover {
+    background: #6f00ff;
+    color: #fff;
+}
+
+.contenedor-tabs .active a {
+    background: #6f00ff;
+    color: #fff;
+}
+
+.contenido-tab > div:last-child {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+label {
+    position: absolute;
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    pointer-events: none;
+    font-size: 22px;
+}
+
+label .req {
+    margin: 2px;
+    color: #6f00ff;
+}
+
+label.active {
+    transform: translateY(-25px) scale(0.8);
+    left: 2px;
+    font-size: 14px;
+}
+
+label.active .req {
+    opacity: 0;
+}
+
+label.highlight {
+    color: #fff;
+}
+
+input {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    border-radius: 0;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6f00ff;
+}
+
+.contenedor-input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.fila-arriba:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fila-arriba div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.fila-arriba div:last-child {
+    margin: 0;
+}
+
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 2rem;
+    background: #6f00ff;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.button:hover,
+.button:focus {
+    background: #6f00ff;
+
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .fila-arriba div {
+        width: 100%;
+    }
+
+    .fila-arriba div:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor-tabs li a {
+        width: 100%;
+    }
+}
