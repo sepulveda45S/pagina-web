@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Juegos</title>
+    <script defer src="../efecto nieve/nieve.js"></script>
+    <style>
+        
+        *{
+         padding: 0;
+         margin: 0;
+         text-decoration: none;
+         list-style: none;
+         box-sizing: border-box;
+       }
+       
+       body{
+       font-family: Arial ;
+       }
+       
+       
+       nav{
+           background: linear-gradient(to right, rgb(21, 3, 113), rgb(76, 0, 255), rgb(96, 18, 141));
+         
+         height: 80px;
+         width: 100%;
+       }
+       
+       label.logo{
+         color: white;
+         font-size: 30px;
+         line-height: 80px;
+         padding: 0 100px;
+         font-weight: bold;
+       }
+       
+       nav ul{
+         float: right;
+         margin-right: 20px;
+       }
+       
+       nav ul li{
+         display: inline-block;
+         line-height: 80px;
+         margin: 0 5px;
+       }
+       
+       nav ul li a{
+         color: white;
+         font-size: 17px;
+         padding: 7px 13px;
+         border-radius: 3px;
+       
+       }
+       a.active,a:hover{
+         color: #ffffff;  
+         font-weight: 100;
+         background : linear-gradient
+         (90deg, rgba(2, 0, 2, 0.21) 
+         40%, rgba(0, 242, 255, 0.238) 100%);
+       
+         transition: .5s; 
+         box-shadow: 1px 1px 1px 1px 
+         rgba(2, 2, 92, 0.354);
+       }
+       .checkbtn{
+         font-size: 30px;
+         color: white;
+         float: right;
+         line-height: 80px;
+         margin-right: 40px;
+         cursor: pointer;
+         display: none;
+       }
+       #check{
+         display: none;
+       }
+        
+           
+       
+       @media (max-width: 952px){
+         label.logo{
+          
+           font-size: 18px;
+           padding-left: 50px;
+         }
+         nav ul li a{
+           font-size: 16px;
+         }
+       }
+       
+       
+       @media (max-width: 1070px){
+         .checkbtn{
+           display: block;
+         }
+         ul{
+           position: fixed;
+           width: 100%;
+           height: 100vh;
+           background: #000000b6;
+           top: 80px;
+           left: -100%;
+           text-align: center;
+           transition: all .5s;
+         }
+         nav ul li{
+           display: block;
+           margin: 50px 0;
+           line-height: 30px;
+         }
+         nav ul li a{
+           font-size: 20px;
+         }
+         a:hover,a.active{
+           background: none;
+           color: #0082e6;
+       
+           
+         }
+         #check:checked ~ ul{
+           left: 0;
+         }
+       }
+       
+         </style>
+<nav>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <label class="logo">
+    Game
+    <i class="fa fa-braille" aria-hidden="true"></i>
+     Full</label>
+   
+    <ul>
+      <li><a  href="../inicio/index.html">Inicio</a></li>
+      <li><a class="active" href="../Juegos/INDEX.HTML">Juegos</a></li>
+      <li><a href="../Relojes/index.html">Relojes</a></li>
+      <li><a href="../inicio sesion/index.html">Iniciar Sesion</a></li>
+      
+    </ul>
+
+  </nav>
+</head>
+
+<body>
+    <div class="car-container">
+        <div class="car-row">
+          <div class="car">
+            <img src="https://www.friv5online.com/files/images/fe/fe29810ba51f74448894f2c53e0a3079-420.webp" alt="Carro 1">
+            <h2>creepy Granny scream:Scary freddy</h2>
+            <p>Descripción: Creepy Granny Scream: Scary Freddy es un juego de terror gratuito que puedes jugar online.</p>
+            <a href="https://www.friv5online.com/es/granny.html"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://www3.minijuegosgratis.com/v3/games/thumbnails/228454_1.jpg" alt="Carro 1">
+            <h2>Football Legends 2019</h2>
+            <p>Since you loved the first Football Legends, we give you this 2019 update! With new players in each team.</p>
+            <a href="https://es.y8.com/games/football_legends_2019"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://i.ytimg.com/vi/NMcrsil9kyU/maxresdefault.jpg" alt="Carro 1">
+            <h2>Hot Dog Bush</h2>
+            <p>Descripción: Hot Dog Bush is one of the most iconic Flash games ever made. Once you start cooking those hot dogs, you forget everything else.</p>
+            <a href="https://es.y8.com/games/hot_dog_bush"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://www.numuki.com/game/img/bartender-the-right-mix-1647.jpg" alt="Carro 1">
+            <h2>Bartender:La mezcla correctay</h2>
+            <p>Descripción: ¡Bienvenido a nuestro juego de mezcla de cócteles para conocedores! ¡Mezcla, agita y sirve!</p>
+            <a href="https://es.y8.com/games/bartender_the_right_mix"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnY8PIxcOb1D-9rQn8rHl0pfenIXWXjIKx3tqD9owfeauZdv-v" alt="Carro 1">
+            <h2>8 ball pool</h2>
+            <p>8 Ball Pool Challenge-The pro arcade style pool game with the single-player. 8 Ball League takes the latest technology to create the most realistic and amazing 8 Ball simulator</p>
+            <a href="https://es.y8.com/games/8_ball_pool_html5"><button class="boton">Jugar</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="car-container">
+        <div class="car-row">
+          <div class="car">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_HdZCV2GR2S22o_nH1HPDTRlxsPCGq6hPjojhvRDEBlljHDeA" alt="Carro 1">
+            <h2>Fireboy and Watergirl Forest Temple</h2>
+            <p>Descripción: Fireboy and Watergirl in Forest Temple, episode 1. How well do your hands work together? The Forest Temple is an addictive platform puzzle game, where you have to control two characters synchronously.</p>
+            <a href="https://es.y8.com/games/the_forest_temple"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSlG96ag_p654YTaq2tQPiEPBnec3SieYltrJnhOPvP9-JBdQE" alt="Carro 1">
+            <h2>Command Strike Fps</h2>
+            <p>Descripción: Command Strike Fps is an intense army shooting FPS game. Enjoy the fun features in this game, and become a commando in this mission! Here you ll find classic and favorite features of shooting games</p>
+            <a href="https://es.y8.com/games/command_strike_fps"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://www.play-games.com/files/img/hand-me-the-goods-1656077311.jpg" alt="Carro 1">
+            <h2>Hand Me the Goods</h2>
+            <p>Descripción: Hand Me The Goods takes the concept of reach out and grab and turns it into a crazy version of a sadistic game show.</p>
+            <a href="https://es.y8.com/games/hand_me_the_goods"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRB1tbaGAZ-QKDI7EiZn--o65UscnwuXMikRU-hBaD2ffaGWG2L" alt="Carro 1">
+            <h2>Happy Snakes</h2>
+            <p>Descripción: Happy Snakes es un adictivo juego io donde juegas como una pequeña serpiente que compite por orbes.</p>
+            <a href="https://es.y8.com/games/happy_snakes"><button class="boton">Jugar</button></a>
+          </div>
+          <div class="car">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJrXTXwY5aGm9f29azA20BOSZpFcMREdmOTTWRAF_y45U6J_eH" alt="Carro 1">
+            <h2>Geometry Jump</h2>
+            <p>Descripción: Geometry Jump is a fun ultra reflexive game to play. Enjoy this neon world where the stranded block needs to reach the end. Boost your reflex skills by jumping over any nasty obstacles that pop up in your path</p>
+            <a href="https://es.y8.com/games/geometry_jump_"><button class="boton">Jugar</button></a>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

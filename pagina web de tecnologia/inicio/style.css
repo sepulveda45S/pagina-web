@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, "Ubuntu", helvetica;
+    background: url(https://preview.redd.it/glisaljkehx61.jpg?width=3840&format=pjpg&auto=webp&s=67ef0cab6703666629096074c75e22630c2292ee) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.maquina {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    animation: teclear 2s steps(30) infinite, efecto 0.2s step-end infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes teclear {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@keyframes efecto {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.maquina::after {
+    content: '|';
+    opacity: 1;
+    display: inline-block;
+    animation: cursorParpadeo 0.7s infinite;
+}
+
+@keyframes cursorParpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+

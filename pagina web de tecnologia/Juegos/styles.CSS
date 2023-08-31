@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, "Ubuntu", helvetica;
+    background: url(https://preview.redd.it/glisaljkehx61.jpg?width=3840&format=pjpg&auto=webp&s=67ef0cab6703666629096074c75e22630c2292ee) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.boton{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.car-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.car {
+    text-align: center;
+    width: 18%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.half-width {
+    width: 45%;
+}
+
+.half-width-double {
+    width: 90%;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.car img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
